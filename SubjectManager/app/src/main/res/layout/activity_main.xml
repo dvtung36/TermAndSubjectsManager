@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/sach1"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="200dp">
+
+    </View>
+
+    <TextView
+        android:id="@+id/txt_term_manager"
+        android:layout_width="250dp"
+        android:text="Term Manager"
+        android:background="@drawable/backgroundmain"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#C33838"
+        android:layout_height="70dp">
+    </TextView>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="20dp">
+
+    </View>
+    <TextView
+        android:id="@+id/txt_subjects_manager"
+        android:layout_width="250dp"
+        android:text="Subjects Manager"
+        android:background="@drawable/backgroundmain"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#C33838"
+        android:layout_height="70dp">
+    </TextView>
+
+</LinearLayout>

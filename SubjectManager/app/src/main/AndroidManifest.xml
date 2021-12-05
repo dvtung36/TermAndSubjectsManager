@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tungdv.subjectmanager">
+
+    <application
+
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SubjectManager">
+        <activity
+            android:label="Edit Subjects"
+            android:name=".EditSubjectsActivity"
+            android:exported="true" />
+        <activity
+            android:label="Add Subjects"
+            android:name=".AddSubjectsActivity"
+            android:exported="true" />
+        <activity
+            android:label="Edit Term"
+            android:name=".EditTermActivity"
+            android:exported="true" />
+        <activity
+            android:label="Add Term"
+            android:name=".AddTermActivity"
+            android:exported="true" />
+        <activity
+            android:allowBackup="true"
+            android:label="SUBJECT MANAGER"
+            android:name=".SubjectsManagerActivity"
+            android:exported="true" />
+        <activity
+            android:allowBackup="true"
+            android:label="TERM MANAGER"
+            android:name=".TermManagerActivity"
+            android:exported="true" />
+        <activity
+
+            android:name=".MainActivity"
+            android:allowEmbedded="true"
+            android:label="Term And Subjects Manager"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
