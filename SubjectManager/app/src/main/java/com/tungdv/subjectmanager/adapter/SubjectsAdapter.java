@@ -9,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.tungdv.subjectmanager.IIClickShow;
 import com.tungdv.subjectmanager.R;
 import com.tungdv.subjectmanager.model.Subjects;
 
@@ -19,11 +20,16 @@ public class SubjectsAdapter extends BaseAdapter {
     private List<Subjects> listSubject;
     private LayoutInflater layoutInflater;
     private Context context;
+    private IIClickShow iiClickShow;
 
     public SubjectsAdapter(Context aContext, List<Subjects> listSubject) {
         this.context = aContext;
         this.listSubject = listSubject;
         layoutInflater = LayoutInflater.from(aContext);
+    }
+
+    public void setIiClickShow(IIClickShow iiClickShow) {
+        this.iiClickShow = iiClickShow;
     }
 
     @Override
@@ -67,6 +73,7 @@ public class SubjectsAdapter extends BaseAdapter {
             @Override
             public void onClick(View view) {
                 Log.d("TungDV", " textViewViewDetail onClick");
+                iiClickShow.showDetail(i);
 
             }
         });
@@ -74,14 +81,14 @@ public class SubjectsAdapter extends BaseAdapter {
             @Override
             public void onClick(View view) {
                 Log.d("TungDV", " imageViewEdit onClick");
-
+                iiClickShow.showEdit(i);
             }
         });
         holder.imageViewDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.d("TungDV", " imageViewDelete onClick");
-
+                iiClickShow.showDelete(i);
             }
         });
 

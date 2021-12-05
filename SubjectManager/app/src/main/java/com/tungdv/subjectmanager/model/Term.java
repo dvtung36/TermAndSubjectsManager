@@ -1,6 +1,8 @@
 package com.tungdv.subjectmanager.model;
 
-public class Term {
+import java.io.Serializable;
+
+public class Term implements Serializable {
     private  String maHocPhan ;
     private  String tenHocPhan;
     private  String maMonHoc;

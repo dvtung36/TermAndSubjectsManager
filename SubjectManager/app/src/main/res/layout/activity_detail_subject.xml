@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".AddSubjectsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chi Tiết Môn Học "
+        android:textSize="40sp"
+        android:textColor="@color/red">
+
+    </TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã môn học: "
+            android:textSize="20sp">
+
+        </TextView>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/txt_maMH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundmain"
+            android:hint="Mã môn học..."
+            android:textColorHint="#656464"
+            android:textSize="20sp" />
+
+        <!--   Tên mh -->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên môn học: "
+            android:textSize="20sp">
+
+        </TextView>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/txt_tenMH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundmain"
+            android:hint="Tên môn học..."
+            android:textColorHint="#656464"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã bộ môn: "
+            android:textSize="20sp">
+
+        </TextView>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/txt_maBoMon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundmain"
+            android:hint="Mã bộ môn..."
+            android:textColorHint="#656464"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số tín chỉ: "
+            android:textSize="20sp">
+
+        </TextView>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/txt_so_tin_chi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundmain"
+            android:hint="Số tín chỉ..."
+            android:textColorHint="#656464"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số tiết: "
+            android:textSize="20sp">
+
+        </TextView>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/txt_soTiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundmain"
+            android:hint="Số tiết..."
+            android:textColorHint="#656464"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô tả: "
+            android:textSize="20sp">
+
+        </TextView>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/txt_moTa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundmain"
+            android:hint="Mô tả..."
+            android:textColorHint="#656464"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="200dp"
+        android:text="ok"
+        android:textSize="30sp"
+        android:background="@drawable/backgroundmain"
+        android:layout_height="70dp">
+
+    </Button>
+</LinearLayout>

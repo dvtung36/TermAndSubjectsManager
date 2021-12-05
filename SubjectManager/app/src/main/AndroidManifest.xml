@@ -3,43 +3,41 @@
     package="com.tungdv.subjectmanager">
 
     <application
-
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SubjectManager">
         <activity
-            android:label="Edit Subjects"
-            android:name=".EditSubjectsActivity"
-            android:exported="true" />
-        <activity
+            android:name=".DetailTermActivity"
             android:label="Add Subjects"
+            android:exported="true" />
+        <activity
+            android:name=".DetailSubjectActivity"
+            android:label="Add Subjects"
+            android:exported="true" />
+        <activity
             android:name=".AddSubjectsActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Add Subjects" />
         <activity
-            android:label="Edit Term"
-            android:name=".EditTermActivity"
-            android:exported="true" />
-        <activity
-            android:label="Add Term"
             android:name=".AddTermActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Add Term" />
         <activity
-            android:allowBackup="true"
-            android:label="SUBJECT MANAGER"
             android:name=".SubjectsManagerActivity"
-            android:exported="true" />
-        <activity
             android:allowBackup="true"
-            android:label="TERM MANAGER"
-            android:name=".TermManagerActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="SUBJECT MANAGER" />
         <activity
-
+            android:name=".TermManagerActivity"
+            android:allowBackup="true"
+            android:exported="true"
+            android:label="TERM MANAGER" />
+        <activity
             android:name=".MainActivity"
             android:allowEmbedded="true"
-            android:label="Term And Subjects Manager"
-            android:exported="true">
+            android:exported="true"
+            android:label="Term And Subjects Manager">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

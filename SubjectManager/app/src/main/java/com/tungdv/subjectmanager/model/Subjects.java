@@ -1,6 +1,11 @@
 package com.tungdv.subjectmanager.model;
 
-public class Subjects {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import java.io.Serializable;
+
+public class Subjects implements Serializable {
     private String maMonHoc;
     private String tenMonHoc;
     private String maBoMon;
@@ -66,4 +71,5 @@ public class Subjects {
         this.soTiet = soTiet;
         this.moTa = moTa;
     }
+
 }

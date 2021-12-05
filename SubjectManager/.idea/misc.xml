@@ -3,13 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.22037037037037038" />
+        <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20052083333333334" />
         <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/drawable/backgrounddetail.xml" value="0.14635416666666667" />
         <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/drawable/backgroundmain.xml" value="0.2703125" />
         <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.22037037037037038" />
         <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.22037037037037038" />
+        <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/layout/activity_add_subjects.xml" value="0.21422101449275363" />
+        <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/layout/activity_add_term.xml" value="0.21422101449275363" />
+        <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/layout/activity_detail_subject.xml" value="0.21422101449275363" />
+        <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/layout/activity_detail_term.xml" value="0.21422101449275363" />
+        <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/layout/activity_edit_subjects.xml" value="0.21422101449275363" />
         <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/layout/activity_subjects_manager.xml" value="0.13020833333333334" />
-        <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/layout/activity_term_manager.xml" value="0.13020833333333334" />
+        <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/layout/activity_term_manager.xml" value="0.2" />
         <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/layout/item_subjects.xml" value="0.2" />
         <entry key="..\:/GitHub/TermAndSubjectsManager/SubjectManager/app/src/main/res/layout/item_term.xml" value="0.21422101449275363" />
         <entry key="..\:/work/SubjectManager/app/src/main/res/layout/activity_main.xml" value="0.16893115942028986" />

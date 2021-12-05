@@ -2,7 +2,9 @@ package com.tungdv.subjectmanager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -15,9 +17,9 @@ import com.tungdv.subjectmanager.model.Term;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TermManagerActivity extends AppCompatActivity {
+public class TermManagerActivity extends AppCompatActivity implements IIClickShow {
     ListView listViewTerm;
-    ImageView imageViewSearch;
+    ImageView imageViewSearch, imageViewAddTerm;
     EditText editTextSearch;
 
     List<Term> listTerm;
@@ -31,12 +33,24 @@ public class TermManagerActivity extends AppCompatActivity {
 
         final ListView list_view = (ListView) findViewById(R.id.listView_Term);
         TermAdapter adapter = new TermAdapter(getApplicationContext(), listTerm);
+        adapter.setIiClickShow(this);
         list_view.setAdapter(adapter);
+
+        imageViewAddTerm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AddTermActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
     void init(){
         listViewTerm =findViewById(R.id.listView_Term);
         imageViewSearch = findViewById(R.id.imv_search);
         editTextSearch = findViewById(R.id.edt_search);
+        imageViewAddTerm = findViewById(R.id.imv_add_term);
+
         Term term = new Term("1","Lập Trình","12","1",
                 "2","2","2020-2021");
         Term term1 = new Term("1","Khoa Học Xã Hội","12","1",
@@ -51,5 +65,27 @@ public class TermManagerActivity extends AppCompatActivity {
         listTerm.add(term1);
         listTerm.add(term2);
         listTerm.add(term3);
+    }
+
+
+    @Override
+    public void showDetail(int pos) {
+        Intent intent = new Intent(this, DetailTermActivity.class);
+        intent.putExtra("key2", listTerm.get(pos));
+        startActivity(intent);
+    }
+
+    @Override
+    public void showEdit(int pos) {
+        Intent intent = new Intent(this, AddTermActivity.class);
+        intent.putExtra("key4", listTerm.get(pos));
+        intent.putExtra("keyIsAddTerm", "editTerm");
+
+        startActivity(intent);
+    }
+
+    @Override
+    public void showDelete(int pos) {
+
     }
 }

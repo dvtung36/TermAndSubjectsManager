@@ -1,9 +1,224 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".AddTermActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mã học phần"
+                android:textSize="20sp">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp">
+
+            </View>
+            <EditText
+                android:id="@+id/edt_maHP"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/backgroundmain"
+                android:hint="Nhập mã học phần..."
+                android:textColor="@color/black"
+                android:textColorHint="#656464"
+                android:textSize="18sp" />
+
+            <!--   Tên mh -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên học phần"
+                android:textSize="20sp">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp">
+
+            </View>
+            <EditText
+                android:id="@+id/edt_tenHP"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/backgroundmain"
+                android:hint="Nhập tên học phần..."
+                android:textColor="@color/black"
+                android:textColorHint="#656464"
+                android:textSize="18sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mã môn học"
+                android:textSize="20sp">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp">
+
+            </View>
+            <EditText
+                android:id="@+id/edt_maMonHoc"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/backgroundmain"
+                android:hint="Nhập mã môn học..."
+                android:textColor="@color/black"
+                android:textColorHint="#656464"
+                android:textSize="18sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mã giáo viên 1"
+                android:textSize="20sp">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp">
+
+            </View>
+            <EditText
+                android:id="@+id/edt_maGV1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/backgroundmain"
+                android:hint="Nhập mã giáo viên 1..."
+                android:textColor="@color/black"
+                android:textColorHint="#656464"
+                android:textSize="18sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mã giáo viên 2"
+                android:textSize="20sp">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp">
+
+            </View>
+            <EditText
+                android:id="@+id/edt_maGV2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/backgroundmain"
+                android:hint="Nhập mã giáo viên 2..."
+                android:textColor="@color/black"
+                android:textColorHint="#656464"
+                android:textSize="18sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Học Kỳ"
+                android:textSize="20sp">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp">
+
+            </View>
+            <EditText
+                android:id="@+id/edt_hocKy"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/backgroundmain"
+                android:hint="Nhập học kỳ..."
+                android:textColor="@color/black"
+                android:textColorHint="#656464"
+                android:textSize="18sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Năm học"
+                android:textSize="20sp">
+
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp">
+
+            </View>
+            <EditText
+                android:id="@+id/edt_namHoc"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/backgroundmain"
+                android:hint="Nhập năm học..."
+                android:textColor="@color/black"
+                android:textColorHint="#656464"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_add_term"
+                android:layout_width="200dp"
+                android:text="Add Term"
+                android:textSize="20sp"
+                android:layout_height="70dp">
+
+            </Button>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

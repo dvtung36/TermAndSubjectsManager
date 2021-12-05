@@ -1,9 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".AddSubjectsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <LinearLayout
+         android:gravity="center_horizontal"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="20dp">
+
+         </View>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Mã môn học"
+             android:textSize="20sp">
+
+         </TextView>
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="5dp">
+
+         </View>
+         <EditText
+             android:id="@+id/edt_maMH"
+             android:layout_width="match_parent"
+             android:layout_height="70dp"
+             android:background="@drawable/backgroundmain"
+             android:hint="Nhập mã môn học..."
+             android:textColor="@color/black"
+             android:textColorHint="#656464"
+             android:textSize="18sp" />
+
+         <!--   Tên mh -->
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="20dp">
+
+         </View>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Tên môn học"
+             android:textSize="20sp">
+
+         </TextView>
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="5dp">
+
+         </View>
+         <EditText
+             android:id="@+id/edt_tenMH"
+             android:layout_width="match_parent"
+             android:layout_height="70dp"
+             android:background="@drawable/backgroundmain"
+             android:hint="Nhập tên môn học..."
+             android:textColor="@color/black"
+             android:textColorHint="#656464"
+             android:textSize="18sp" />
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="20dp">
+
+         </View>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Mã bộ môn"
+             android:textSize="20sp">
+
+         </TextView>
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="5dp">
+
+         </View>
+         <EditText
+             android:id="@+id/edt_mabomon"
+             android:layout_width="match_parent"
+             android:layout_height="70dp"
+             android:background="@drawable/backgroundmain"
+             android:hint="Nhập mã bộ môn..."
+             android:textColor="@color/black"
+             android:textColorHint="#656464"
+             android:textSize="18sp" />
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="20dp">
+
+         </View>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Số tín chỉ"
+             android:textSize="20sp">
+
+         </TextView>
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="5dp">
+
+         </View>
+         <EditText
+             android:id="@+id/edt_soTinchi"
+             android:layout_width="match_parent"
+             android:layout_height="70dp"
+             android:background="@drawable/backgroundmain"
+             android:hint="Nhập số tín chỉ..."
+             android:inputType="number"
+             android:textColor="@color/black"
+             android:textColorHint="#656464"
+             android:textSize="18sp" />
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="20dp">
+
+         </View>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Số tiết"
+             android:textSize="20sp">
+
+         </TextView>
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="5dp">
+
+         </View>
+         <EditText
+             android:id="@+id/edt_soTiet"
+             android:layout_width="match_parent"
+             android:layout_height="70dp"
+             android:background="@drawable/backgroundmain"
+             android:hint="Nhập số tiết..."
+             android:inputType="number"
+
+             android:textColor="@color/black"
+             android:textColorHint="#656464"
+             android:textSize="18sp" />
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="20dp">
+
+         </View>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Mô tả"
+             android:textSize="20sp">
+
+         </TextView>
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="5dp">
+
+         </View>
+         <EditText
+             android:id="@+id/edt_mota"
+             android:layout_width="match_parent"
+             android:layout_height="70dp"
+             android:background="@drawable/backgroundmain"
+             android:hint="Nhập mô tả..."
+             android:textColor="@color/black"
+             android:textColorHint="#656464"
+             android:textSize="18sp" />
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="20dp">
+
+         </View>
+
+         <Button
+             android:id="@+id/btn_add_subject"
+             android:layout_width="200dp"
+             android:text="Add Subject"
+             android:textSize="20sp"
+             android:layout_height="70dp">
+
+         </Button>
+     </LinearLayout>
+
+ </ScrollView>
+
+
+</LinearLayout>
