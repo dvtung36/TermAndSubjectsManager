@@ -1,5 +1,5 @@
 package com.tungdv.subjectmanager.database;
 
-public class DatabaseHelper {
+public class SubjectsDatabaseHelper {
 
 }

@@ -1,4 +1,4 @@
 package com.tungdv.subjectmanager.database;
 
-public class Provider {
+public class SubjectsProvider {
 }
