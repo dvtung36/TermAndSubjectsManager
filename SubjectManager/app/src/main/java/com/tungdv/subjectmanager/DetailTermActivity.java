@@ -25,18 +25,18 @@ public class DetailTermActivity extends AppCompatActivity {
             textMaMH.setText("" + term.getMaMonHoc());
             textMaGV1.setText("" + term.getMaGiaoVien1());
             textMaGV2.setText("" + term.getMaGiaoVien2());
-            textHocKy.setText(""+ term.getHocKy());
-            textNamHoc.setText(""+term.getNamHoc());
+            textHocKy.setText("" + term.getHocKy());
+            textNamHoc.setText("" + term.getNamHoc());
         }
     }
 
-    private void init(){
+    private void init() {
         textMaHP = findViewById(R.id.txt_maHP);
         textTenHP = findViewById(R.id.txt_tenHP);
         textMaMH = findViewById(R.id.txt_maMonHoc);
         textMaGV1 = findViewById(R.id.txt_maGV1);
         textMaGV2 = findViewById(R.id.txt_maGV2);
         textHocKy = findViewById(R.id.txt_hocKy);
-        textNamHoc =findViewById(R.id.txt_namHoc);
+        textNamHoc = findViewById(R.id.txt_namHoc);
     }
 }

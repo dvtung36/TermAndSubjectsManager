@@ -23,6 +23,10 @@ public class TermAdapter extends BaseAdapter {
     private Context context;
     private IIClickShow iiClickShow;
 
+    public void setListTerm(List<Term> listTerm) {
+        this.listTerm = listTerm;
+    }
+
     public TermAdapter(Context aContext, List<Term> listTerm) {
         this.context = aContext;
         this.listTerm = listTerm;
@@ -66,7 +70,7 @@ public class TermAdapter extends BaseAdapter {
         }
         Term term = this.listTerm.get(i);
 
-        holder.textViewTenHocPhan.setText("Học phần: " + term.getTenHocPhan());
+        holder.textViewTenHocPhan.setText("Tên học phần: " + term.getTenHocPhan());
         holder.textViewHocKy.setText("Học kỳ: " + term.getHocKy());
         holder.textViewNamHoc.setText("Năm học: " + term.getNamHoc());
 

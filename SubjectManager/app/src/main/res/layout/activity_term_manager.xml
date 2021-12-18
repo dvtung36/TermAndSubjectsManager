@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/lophoc"
     android:gravity="center_horizontal"
     tools:context=".TermManagerActivity">
     <View
@@ -23,10 +22,10 @@
             android:background="@drawable/backgroundmain"
             android:id="@+id/edt_search"
             android:layout_width="0dp"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textColor="#932929"
             android:textColorHint="#F17F7F"
-            android:hint="Enter Term name..."
+            android:hint="nhập tên học phần..."
             android:layout_weight="7"
             android:layout_height="50dp">
         </EditText>
@@ -73,8 +72,8 @@
 
     <ImageView
         android:id="@+id/imv_add_term"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:background="@drawable/backgroundmain"
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="16dp"

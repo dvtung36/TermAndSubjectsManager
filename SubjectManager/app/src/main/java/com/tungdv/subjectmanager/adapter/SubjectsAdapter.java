@@ -22,6 +22,11 @@ public class SubjectsAdapter extends BaseAdapter {
     private Context context;
     private IIClickShow iiClickShow;
 
+    public void setListSubject(List<Subjects> listSubject) {
+        this.listSubject = listSubject;
+
+    }
+
     public SubjectsAdapter(Context aContext, List<Subjects> listSubject) {
         this.context = aContext;
         this.listSubject = listSubject;
@@ -65,7 +70,7 @@ public class SubjectsAdapter extends BaseAdapter {
         }
         Subjects subjects = this.listSubject.get(i);
 
-        holder.textViewTenMonHoc.setText("Môn học: " + subjects.getTenMonHoc());
+        holder.textViewTenMonHoc.setText("Tên môn học: " + subjects.getTenMonHoc());
         holder.textViewSoTinChi.setText("Số tín chỉ: " + subjects.getSoTinChi());
         holder.textViewSoTiet.setText("Số tiết: " + subjects.getSoTiet());
 
@@ -94,7 +99,6 @@ public class SubjectsAdapter extends BaseAdapter {
 
         return view;
     }
-
     static class ViewHolder {
         TextView textViewTenMonHoc, textViewSoTinChi, textViewSoTiet, textViewViewDetail;
         ImageView imageViewEdit, imageViewDelete;

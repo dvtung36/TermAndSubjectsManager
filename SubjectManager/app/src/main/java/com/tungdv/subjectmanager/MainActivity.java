@@ -20,14 +20,14 @@ public class MainActivity extends AppCompatActivity {
         textViewTerm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),TermManagerActivity.class);
+                Intent intent = new Intent(getApplicationContext(), TermManagerActivity.class);
                 startActivity(intent);
             }
         });
         textViewSubject.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),SubjectsManagerActivity.class);
+                Intent intent = new Intent(getApplicationContext(), SubjectsManagerActivity.class);
                 startActivity(intent);
             }
         });

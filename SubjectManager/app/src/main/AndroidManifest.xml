@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tungdv.subjectmanager">
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <application
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -9,41 +9,48 @@
         android:theme="@style/Theme.SubjectManager">
         <activity
             android:name=".DetailTermActivity"
-            android:label="Add Subjects"
+            android:label="Chi tiết học phần"
             android:exported="true" />
         <activity
             android:name=".DetailSubjectActivity"
-            android:label="Add Subjects"
+            android:label="Chi tiết môn học"
             android:exported="true" />
         <activity
-            android:name=".AddSubjectsActivity"
+            android:name=".AddOrEditSubjectsActivity"
             android:exported="true"
-            android:label="Add Subjects" />
+            android:label="Thêm mới hoặc sửa môn học" />
         <activity
-            android:name=".AddTermActivity"
+            android:name=".AddOrEditTermActivity"
             android:exported="true"
-            android:label="Add Term" />
+            android:label="Thêm mới hoặc sửa học phần" />
         <activity
             android:name=".SubjectsManagerActivity"
             android:allowBackup="true"
             android:exported="true"
-            android:label="SUBJECT MANAGER" />
+            android:label="Quản lý môn học" />
         <activity
             android:name=".TermManagerActivity"
             android:allowBackup="true"
             android:exported="true"
-            android:label="TERM MANAGER" />
+            android:label="Quản lý học phần" />
         <activity
             android:name=".MainActivity"
             android:allowEmbedded="true"
             android:exported="true"
-            android:label="Term And Subjects Manager">
+            android:label="Quản lý môn học và học phần">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:authorities="com.tungdv.subjectmanager.database.TermProvider"
+            android:name=".database.TermProvider"/>
+        <provider
+            android:authorities="com.tungdv.subjectmanager.database.SubjectsProvider"
+            android:name=".database.SubjectsProvider"/>
     </application>
 
 </manifest>

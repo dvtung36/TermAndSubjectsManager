@@ -5,7 +5,6 @@
     android:id="@+id/activity_subjects_manager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_main"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
@@ -28,10 +27,10 @@
             android:layout_height="50dp"
             android:layout_weight="7"
             android:background="@drawable/backgroundmain"
-            android:hint="Enter subject name..."
+            android:hint="nhập tên môn học..."
             android:textColor="#932929"
             android:textColorHint="#F17F7F"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <View
             android:layout_width="0dp"
@@ -79,8 +78,8 @@
 
         <ImageView
             android:id="@+id/imv_add_subject"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:background="@drawable/backgroundmain"
             android:layout_gravity="bottom|end"
             android:layout_marginEnd="16dp"

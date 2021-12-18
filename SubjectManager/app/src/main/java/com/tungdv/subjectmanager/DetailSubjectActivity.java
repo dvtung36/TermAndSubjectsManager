@@ -29,7 +29,7 @@ public class DetailSubjectActivity extends AppCompatActivity {
             textMaBM.setText("" + subjects.getMaBoMon());
             textSoTinChi.setText("" + subjects.getSoTinChi());
             textSoTiet.setText("" + subjects.getSoTiet());
-            textMoTa.setText(""+subjects.getMoTa());
+            textMoTa.setText("" + subjects.getMoTa());
         }
 
 

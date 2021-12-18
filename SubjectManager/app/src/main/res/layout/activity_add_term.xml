@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".AddTermActivity">
+    tools:context=".AddOrEditTermActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
             <EditText
                 android:id="@+id/edt_maHP"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:background="@drawable/backgroundmain"
                 android:hint="Nhập mã học phần..."
                 android:textColor="@color/black"
@@ -67,7 +67,7 @@
             <EditText
                 android:id="@+id/edt_tenHP"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:background="@drawable/backgroundmain"
                 android:hint="Nhập tên học phần..."
                 android:textColor="@color/black"
@@ -94,7 +94,7 @@
             <EditText
                 android:id="@+id/edt_maMonHoc"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:background="@drawable/backgroundmain"
                 android:hint="Nhập mã môn học..."
                 android:textColor="@color/black"
@@ -121,7 +121,7 @@
             <EditText
                 android:id="@+id/edt_maGV1"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:background="@drawable/backgroundmain"
                 android:hint="Nhập mã giáo viên 1..."
                 android:textColor="@color/black"
@@ -148,7 +148,7 @@
             <EditText
                 android:id="@+id/edt_maGV2"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:background="@drawable/backgroundmain"
                 android:hint="Nhập mã giáo viên 2..."
                 android:textColor="@color/black"
@@ -175,7 +175,7 @@
             <EditText
                 android:id="@+id/edt_hocKy"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:background="@drawable/backgroundmain"
                 android:hint="Nhập học kỳ..."
                 android:textColor="@color/black"
@@ -201,7 +201,7 @@
             <EditText
                 android:id="@+id/edt_namHoc"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:background="@drawable/backgroundmain"
                 android:hint="Nhập năm học..."
                 android:textColor="@color/black"

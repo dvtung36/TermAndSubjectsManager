@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".AddSubjectsActivity">
+    tools:context=".AddOrEditSubjectsActivity">
 
  <ScrollView
      android:layout_width="match_parent"
@@ -37,7 +37,7 @@
          <EditText
              android:id="@+id/edt_maMH"
              android:layout_width="match_parent"
-             android:layout_height="70dp"
+             android:layout_height="50dp"
              android:background="@drawable/backgroundmain"
              android:hint="Nhập mã môn học..."
              android:textColor="@color/black"
@@ -67,7 +67,7 @@
          <EditText
              android:id="@+id/edt_tenMH"
              android:layout_width="match_parent"
-             android:layout_height="70dp"
+             android:layout_height="50dp"
              android:background="@drawable/backgroundmain"
              android:hint="Nhập tên môn học..."
              android:textColor="@color/black"
@@ -94,7 +94,7 @@
          <EditText
              android:id="@+id/edt_mabomon"
              android:layout_width="match_parent"
-             android:layout_height="70dp"
+             android:layout_height="50dp"
              android:background="@drawable/backgroundmain"
              android:hint="Nhập mã bộ môn..."
              android:textColor="@color/black"
@@ -121,7 +121,7 @@
          <EditText
              android:id="@+id/edt_soTinchi"
              android:layout_width="match_parent"
-             android:layout_height="70dp"
+             android:layout_height="50dp"
              android:background="@drawable/backgroundmain"
              android:hint="Nhập số tín chỉ..."
              android:inputType="number"
@@ -149,7 +149,7 @@
          <EditText
              android:id="@+id/edt_soTiet"
              android:layout_width="match_parent"
-             android:layout_height="70dp"
+             android:layout_height="50dp"
              android:background="@drawable/backgroundmain"
              android:hint="Nhập số tiết..."
              android:inputType="number"
@@ -178,7 +178,7 @@
          <EditText
              android:id="@+id/edt_mota"
              android:layout_width="match_parent"
-             android:layout_height="70dp"
+             android:layout_height="50dp"
              android:background="@drawable/backgroundmain"
              android:hint="Nhập mô tả..."
              android:textColor="@color/black"
