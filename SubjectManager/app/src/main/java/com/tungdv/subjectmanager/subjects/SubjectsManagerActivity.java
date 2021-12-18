@@ -28,7 +28,7 @@ import java.util.List;
 public class SubjectsManagerActivity extends AppCompatActivity implements IIClickShow {
 
     ListView listViewSubject;
-    ImageView imageViewSearch, imageViewAddSubject;
+    ImageView imageViewSearch, imageViewAddSubject, imageViewShowAll;
     EditText editTextSearch;
     SubjectsAdapter adapter;
 
@@ -54,6 +54,22 @@ public class SubjectsManagerActivity extends AppCompatActivity implements IIClic
             }
         });
 
+        imageViewSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("TungDV", "imageViewSearch onClick: ");
+                listSubject= getListSubjectAfterSearch(editTextSearch.getText().toString());
+                adapter.setListSubject(listSubject);
+                adapter.notifyDataSetChanged();
+            }
+        });
+        imageViewShowAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setUI();
+            }
+        });
+
     }
 
     void init() {
@@ -61,6 +77,7 @@ public class SubjectsManagerActivity extends AppCompatActivity implements IIClic
         imageViewSearch = findViewById(R.id.imv_search);
         editTextSearch = findViewById(R.id.edt_search);
         imageViewAddSubject = findViewById(R.id.imv_add_subject);
+        imageViewShowAll = findViewById(R.id.imv_show_all);
 
         listSubject = new ArrayList<>();
         listSubject = getListSubjectDatabase(this);
@@ -164,4 +181,37 @@ public class SubjectsManagerActivity extends AppCompatActivity implements IIClic
         }
         return subjectsList;
     }
+    public  List<Subjects> getListSubjectAfterSearch(String query){
+
+        List<Subjects> subjectsList = new ArrayList<>();
+        Uri uri = SubjectsProvider.CONTENT_URI;
+        String[] projection = {
+                Ultils.MA_MON_HOC,
+                Ultils.TEN_MON_HOC,
+                Ultils.MA_BO_MON,
+                Ultils.SO_TIN_CHI,
+                Ultils.SO_TIET,
+                Ultils.MO_TA,
+        };
+        Cursor cursor = getApplicationContext().getContentResolver().query(uri,
+                projection, Ultils.TEN_MON_HOC + " like ?", new String[]{"%" + query + "%"}, null);
+        Log.d("TungDV", "getListSubjectAfterSearch:  cursor1212 = "+cursor);
+        if (cursor != null) {
+            while (cursor.moveToNext()) {
+                Log.d("TungDV", "getListSubjectAfterSearch:  cursor != null");
+                String mamh = cursor.getString(0);
+                String tenmh = cursor.getString(1);
+                String mabm = cursor.getString(2);
+                int sotinchi = cursor.getInt(3);
+                int sotiet = cursor.getInt(4);
+                String mota = cursor.getString(5);
+                Subjects subjects = new Subjects(mamh, tenmh, mabm, sotinchi, sotiet, mota);
+                subjectsList.add(subjects);
+            }
+            cursor.close();
+        }
+        return subjectsList;
+    }
+
+
 }
