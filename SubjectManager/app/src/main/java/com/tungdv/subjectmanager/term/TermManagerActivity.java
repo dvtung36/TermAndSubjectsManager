@@ -18,8 +18,10 @@ import android.widget.ListView;
 import com.tungdv.subjectmanager.IIClickShow;
 import com.tungdv.subjectmanager.R;
 import com.tungdv.subjectmanager.adapter.TermAdapter;
+import com.tungdv.subjectmanager.database.SubjectsProvider;
 import com.tungdv.subjectmanager.database.TermProvider;
 import com.tungdv.subjectmanager.database.Ultils;
+import com.tungdv.subjectmanager.model.Subjects;
 import com.tungdv.subjectmanager.model.Term;
 
 import java.util.ArrayList;
@@ -27,7 +29,7 @@ import java.util.List;
 
 public class TermManagerActivity extends AppCompatActivity implements IIClickShow {
     ListView listViewTerm;
-    ImageView imageViewSearch, imageViewAddTerm;
+    ImageView imageViewSearch, imageViewAddTerm,imageViewShowAll;
     EditText editTextSearch;
     TermAdapter adapter;
 
@@ -53,6 +55,20 @@ public class TermManagerActivity extends AppCompatActivity implements IIClickSho
                 startActivity(intent);
             }
         });
+        imageViewSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                listTerm = getListTermAfterSearch(editTextSearch.getText().toString());
+                adapter.setListTerm(listTerm);
+                adapter.notifyDataSetChanged();
+            }
+        });
+        imageViewShowAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setUI();
+            }
+        });
     }
 
     @Override
@@ -69,6 +85,7 @@ public class TermManagerActivity extends AppCompatActivity implements IIClickSho
         imageViewSearch = findViewById(R.id.imv_search);
         editTextSearch = findViewById(R.id.edt_search);
         imageViewAddTerm = findViewById(R.id.imv_add_term);
+        imageViewShowAll = findViewById(R.id.imv_show_all);
 
         listTerm = new ArrayList<>();
         listTerm = getListTermDatabase(this);
@@ -168,6 +185,38 @@ public class TermManagerActivity extends AppCompatActivity implements IIClickSho
             cursor.close();
         }
 
+        return lisTerm;
+    }
+
+    public  List<Term> getListTermAfterSearch(String query){
+
+        List<Term> lisTerm = new ArrayList<>();
+        Uri uri = TermProvider.CONTENT_URI;
+        String[] projection = {
+                Ultils.MA_HOC_PHAN,
+                Ultils.TEN_HOC_PHAN,
+                Ultils.MA_MH,
+                Ultils.MA_GV1,
+                Ultils.MA_GV2,
+                Ultils.HOC_KY,
+                Ultils.NAM_HOC,
+        };
+        Cursor cursor = getApplicationContext().getContentResolver().query(uri,
+                projection, Ultils.TEN_HOC_PHAN + " like ?", new String[]{"%" + query + "%"}, null);
+        if (cursor != null) {
+            while (cursor.moveToNext()) {
+                String mahp = cursor.getString(0);
+                String tehp = cursor.getString(1);
+                String mamh = cursor.getString(2);
+                String magv1 = cursor.getString(3);
+                String magv2 = cursor.getString(4);
+                String hocky = cursor.getString(5);
+                String namhoc = cursor.getString(6);
+                Term term = new Term(mahp, tehp, mamh, magv1, magv2, hocky, namhoc);
+                lisTerm.add(term);
+            }
+            cursor.close();
+        }
         return lisTerm;
     }
 
