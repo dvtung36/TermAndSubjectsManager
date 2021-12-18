@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.tungdv.subjectmanager.subjects.SubjectsManagerActivity;
+import com.tungdv.subjectmanager.term.TermManagerActivity;
+
 public class MainActivity extends AppCompatActivity {
     TextView textViewSubject, textViewTerm;
 

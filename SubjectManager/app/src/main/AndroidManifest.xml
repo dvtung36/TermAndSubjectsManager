@@ -8,28 +8,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SubjectManager">
         <activity
-            android:name=".DetailTermActivity"
+            android:name=".term.DetailTermActivity"
             android:label="Chi tiết học phần"
             android:exported="true" />
         <activity
-            android:name=".DetailSubjectActivity"
+            android:name=".subjects.DetailSubjectActivity"
             android:label="Chi tiết môn học"
             android:exported="true" />
         <activity
-            android:name=".AddOrEditSubjectsActivity"
+            android:name=".subjects.AddOrEditSubjectsActivity"
             android:exported="true"
             android:label="Thêm mới hoặc sửa môn học" />
         <activity
-            android:name=".AddOrEditTermActivity"
+            android:name=".term.AddOrEditTermActivity"
             android:exported="true"
             android:label="Thêm mới hoặc sửa học phần" />
         <activity
-            android:name=".SubjectsManagerActivity"
+            android:name=".subjects.SubjectsManagerActivity"
             android:allowBackup="true"
             android:exported="true"
             android:label="Quản lý môn học" />
         <activity
-            android:name=".TermManagerActivity"
+            android:name=".term.TermManagerActivity"
             android:allowBackup="true"
             android:exported="true"
             android:label="Quản lý học phần" />

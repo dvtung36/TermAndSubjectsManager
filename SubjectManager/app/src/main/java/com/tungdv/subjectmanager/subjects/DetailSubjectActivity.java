@@ -1,4 +1,4 @@
-package com.tungdv.subjectmanager;
+package com.tungdv.subjectmanager.subjects;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.tungdv.subjectmanager.R;
 import com.tungdv.subjectmanager.model.Subjects;
 
 public class DetailSubjectActivity extends AppCompatActivity {

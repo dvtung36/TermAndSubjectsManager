@@ -1,6 +1,5 @@
-package com.tungdv.subjectmanager;
+package com.tungdv.subjectmanager.term;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
@@ -16,13 +15,14 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.tungdv.subjectmanager.IIClickShow;
+import com.tungdv.subjectmanager.R;
 import com.tungdv.subjectmanager.adapter.TermAdapter;
 import com.tungdv.subjectmanager.database.TermProvider;
 import com.tungdv.subjectmanager.database.Ultils;
 import com.tungdv.subjectmanager.model.Term;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class TermManagerActivity extends AppCompatActivity implements IIClickShow {

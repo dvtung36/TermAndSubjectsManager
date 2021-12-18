@@ -1,4 +1,4 @@
-package com.tungdv.subjectmanager;
+package com.tungdv.subjectmanager.subjects;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,12 +15,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.tungdv.subjectmanager.IIClickShow;
+import com.tungdv.subjectmanager.R;
 import com.tungdv.subjectmanager.adapter.SubjectsAdapter;
 import com.tungdv.subjectmanager.database.SubjectsProvider;
-import com.tungdv.subjectmanager.database.TermProvider;
 import com.tungdv.subjectmanager.database.Ultils;
 import com.tungdv.subjectmanager.model.Subjects;
-import com.tungdv.subjectmanager.model.Term;
 
 import java.util.ArrayList;
 import java.util.List;

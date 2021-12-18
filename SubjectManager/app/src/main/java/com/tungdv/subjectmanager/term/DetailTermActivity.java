@@ -1,10 +1,11 @@
-package com.tungdv.subjectmanager;
+package com.tungdv.subjectmanager.term;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.tungdv.subjectmanager.R;
 import com.tungdv.subjectmanager.model.Subjects;
 import com.tungdv.subjectmanager.model.Term;
 
